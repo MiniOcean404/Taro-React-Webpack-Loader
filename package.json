@@ -1,0 +1,64 @@
+{
+  "name": "taro-react-webpack-loader",
+  "author": "MiniOcean404",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "module": "dist/taro-inject-component-loader.esm.js",
+  "typings": "dist/src/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "homepage": "https://github.com/MiniOcean404/Taro-React-Webpack-Loader",
+  "bugs": {
+    "url": "https://github.com/MiniOcean404/Taro-React-Webpack-Loader/issues",
+    "email": "1037306928@qq.com"
+  },
+  "keywords": [
+    "taro",
+    "react",
+    "loader",
+    "webpack",
+    "inject"
+  ],
+  "scripts": {
+    "dev": "rollup -c -w --environment NODE_ENV:dev",
+    "build": "rollup -c  --environment NODE_ENV:build",
+    "dev1": "nodemon --watch src -e ts --exec  ts-node --project ./tsconfig.json src/index.ts",
+    "build1": "ttsc --project ./"
+  },
+  "peerDependencies": {
+    "webpack": "^4.0.0 || ^5.0.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.18.5",
+    "loader-utils": "^3.2.0",
+    "schema-utils": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-typescript": "^7.17.12",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-commonjs": "^22.0.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@types/loader-utils": "^2.0.3",
+    "@types/schema-utils": "^2.4.0",
+    "prettier": "^2.7.1",
+    "rollup": "^2.75.7",
+    "rollup-plugin-clear": "^2.0.7",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-serve": "^1.1.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript": "^1.0.1",
+    "ts-node": "^10.8.1",
+    "tsconfig-paths": "^4.0.0",
+    "tslib": "^2.4.0",
+    "ttypescript": "^1.5.13",
+    "typescript": "^4.7.4",
+    "typescript-transform-paths": "^3.3.1"
+  }
+}
